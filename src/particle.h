@@ -5,6 +5,16 @@
 #include <SFML/Graphics/Color.hpp>
 #include <cmath>
 
+inline float length(const sf::Vector2f &a) {
+  return std::sqrt(a.x * a.x + a.y * a.y);
+}
+
+inline float distance(const sf::Vector2f &a, const sf::Vector2f &b) {
+  const float dx = a.x - b.x;
+  const float dy = a.y - b.y;
+  return std::sqrt(dx * dx + dy * dy);
+}
+
 struct VerletObject {
   sf::Vector2f position_current;
   sf::Vector2f position_old;
