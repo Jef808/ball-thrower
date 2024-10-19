@@ -3,6 +3,7 @@
 
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Graphics/Color.hpp>
+
 #include <cmath>
 
 inline float length(const sf::Vector2f &a) {
