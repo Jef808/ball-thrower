@@ -28,7 +28,7 @@ struct ParticleGenerator {
     sf::Color::Magenta,
     sf::Color::Cyan
   };
-  sf::Vector2f direction{0.0f, 1.0f};
+  sf::Vector2f direction{-1.0f, 0.0f};
 
   uint32_t counter = 0;
   std::random_device rd{};
